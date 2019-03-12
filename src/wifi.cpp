@@ -223,9 +223,10 @@ wifi_loop() {
 
   // Factory reset on GPIO0.
   while (digitalRead(0) == LOW) {
+    Serial.println("GPIO0 is now LOW... Keep holding for factory reset.");
     delay(factoryreset_holdtime);
     if (digitalRead(0) == LOW) {
-      Serial.println("Commencing factory reset.");
+      Serial.println("Commencing factory reset...");
       config_reset();
       ESP.eraseConfig();
       Serial.println("Factory reset complete! Resetting...");

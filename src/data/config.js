@@ -89,8 +89,8 @@ function ConfigViewModel() {
   BaseViewModel.call(this, {
     "ssid": "",
     "pass": "",
-    "emoncms_server": "data.openevse.com",
-    "emoncms_path": "/emoncms",
+    "emoncms_server": "emoncms.org",
+    "emoncms_path": "",
     "emoncms_apikey": "",
     "emoncms_node": "",
     "emoncms_fingerprint": "",

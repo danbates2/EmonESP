@@ -29,8 +29,7 @@
 String input_string="";
 String last_datastr="";
 
-boolean input_get(String& data)
-{
+boolean input_get(String& data) {
   boolean gotData = false;
 
   // If data from test API e.g `http://<IP-ADDRESS>/input?string=CT1:3935,CT2:325,T1:12.5,T2:16.9,T3:11.2,T4:34.7`

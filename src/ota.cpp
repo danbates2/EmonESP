@@ -31,6 +31,7 @@
 
 #include <ArduinoOTA.h>               // local OTA update from Arduino IDE
 #include <ESP8266httpUpdate.h>        // remote OTA update from server
+#define FS_NO_GLOBALS
 #include <FS.h>
 
 // -------------------------------------------------------------------

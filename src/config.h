@@ -83,7 +83,6 @@ extern void config_save_admin(String user, String pass);
 // -------------------------------------------------------------------
 extern void config_save_wifi(String qsid, String qpass);
 
-
 // -------------------------------------------------------------------
 // Reset the config back to defaults
 // -------------------------------------------------------------------

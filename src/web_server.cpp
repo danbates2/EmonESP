@@ -237,7 +237,6 @@ handleSaveMqtt(AsyncWebServerRequest *request) {
   // If connected disconnect MQTT to trigger re-connect with new details
   mqttRestartTime = millis();
 }
-
 // -------------------------------------------------------------------
 // Save the web site user/pass
 // url: /saveadmin
@@ -253,7 +252,7 @@ handleSaveAdmin(AsyncWebServerRequest *request) {
   String qpass = request->arg("pass");
 
   config_save_admin(quser, qpass);
-
+  Serial.println("testing testing saving admin settings");
   response->setCode(200);
   response->print("saved");
   request->send(response);
@@ -627,6 +626,8 @@ web_server_setup()
   server.on("/apoff", handleAPOff);
   server.on("/input", handleInput);
   server.on("/lastvalues", handleLastValues);
+
+  
 
   // Simple Firmware Update Form
   server.on("/upload", HTTP_GET, handleUpdateGet);
