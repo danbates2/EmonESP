@@ -184,6 +184,16 @@ button {
     margin: -12px 0 0 0;
 }
 
+.box h4 {
+    padding-top: 7px;
+    font-weight: bold;
+    font-family: Arial,"sans-serif";
+    font-size: 12px;
+    text-align: center;
+    color: #b6b6b6;
+    margin: -12px 0 0 0;
+}
+
 /*----------------*/
 
 #footer-small-scrn {

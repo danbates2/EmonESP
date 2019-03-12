@@ -51,6 +51,7 @@ String mqtt_user = "";
 String mqtt_pass = "";
 String mqtt_feed_prefix = "";
 
+
 #define EEPROM_ESID_SIZE          32
 #define EEPROM_EPASS_SIZE         64
 #define EEPROM_EMON_API_KEY_SIZE  32
@@ -65,7 +66,7 @@ String mqtt_feed_prefix = "";
 #define EEPROM_MQTT_FEED_PREFIX_SIZE  10
 #define EEPROM_WWW_USER_SIZE      16
 #define EEPROM_WWW_PASS_SIZE      16
-#define EEPROM_SIZE 512
+#define EEPROM_SIZE               512
 
 #define EEPROM_ESID_START         0
 #define EEPROM_ESID_END           (EEPROM_ESID_START + EEPROM_ESID_SIZE)
@@ -159,6 +160,7 @@ void config_load_settings()
   // Web server credentials
   EEPROM_read_string(EEPROM_WWW_USER_START, EEPROM_WWW_USER_SIZE, www_username);
   EEPROM_read_string(EEPROM_WWW_PASS_START, EEPROM_WWW_PASS_SIZE, www_password);
+
 }
 
 void config_save_emoncms(String server, String path, String node, String apikey, String fingerprint)
